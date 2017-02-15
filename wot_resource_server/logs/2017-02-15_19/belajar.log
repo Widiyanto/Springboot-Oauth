@@ -1,0 +1,1644 @@
+2017-02-15 19:10:44,402 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2017-02-15 19:10:44,406 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2017-02-15 19:10:44,458 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 52 ms 
+2017-02-15 19:10:44,473 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca':
+
+org.apache.catalina.connector.RequestFacade@bf3f6b7
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: ea756a43-757a-c480-4123-7483da448112
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=3E7397526B23BBD00C76DE809205F29F
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:10:44,478 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:10:44,478 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:10:44,480 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:10:44,480 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:10:44,482 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:10:44,482 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:10:44,483 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@10c1ef3c 
+2017-02-15 19:10:44,483 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@10c1ef3c 
+2017-02-15 19:10:44,483 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:10:44,483 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:10:44,484 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:10:44,484 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:10:44,484 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:10:44,484 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:10:44,485 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:10:44,486 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:10:44,487 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:10:44,487 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:10:44,487 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:10:44,487 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:10:44,488 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:10:44,488 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:10:44,828 DEBUG o.s.s.o.p.a.OAuth2AuthenticationProcessingFilter - Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities 
+2017-02-15 19:10:44,828 DEBUG o.s.s.o.p.a.OAuth2AuthenticationProcessingFilter - Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities 
+2017-02-15 19:10:44,831 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter' 
+2017-02-15 19:10:44,831 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter' 
+2017-02-15 19:10:44,832 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter' 
+2017-02-15 19:10:44,832 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter' 
+2017-02-15 19:10:44,834 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter' 
+2017-02-15 19:10:44,834 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter' 
+2017-02-15 19:10:44,835 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities' 
+2017-02-15 19:10:44,835 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities' 
+2017-02-15 19:10:44,838 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter' 
+2017-02-15 19:10:44,838 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter' 
+2017-02-15 19:10:44,839 DEBUG o.s.s.w.a.s.CompositeSessionAuthenticationStrategy - Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@312afbc7 
+2017-02-15 19:10:44,839 DEBUG o.s.s.w.a.s.CompositeSessionAuthenticationStrategy - Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@312afbc7 
+2017-02-15 19:10:44,840 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter' 
+2017-02-15 19:10:44,840 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter' 
+2017-02-15 19:10:44,841 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor' 
+2017-02-15 19:10:44,841 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor' 
+2017-02-15 19:10:44,844 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/staff' 
+2017-02-15 19:10:44,844 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/staff' 
+2017-02-15 19:10:44,845 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/client' 
+2017-02-15 19:10:44,845 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/client' 
+2017-02-15 19:10:44,845 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/admin' 
+2017-02-15 19:10:44,845 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/api/admin' 
+2017-02-15 19:10:45,023 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Secure object: FilterInvocation: URL: /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca; Attributes: [#oauth2.throwOnError(hasRole('ROLE_ADMIN'))] 
+2017-02-15 19:10:45,023 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Secure object: FilterInvocation: URL: /api/admin?access_token=505d38ec-21cd-42f1-8e03-ea6dda08fbca; Attributes: [#oauth2.throwOnError(hasRole('ROLE_ADMIN'))] 
+2017-02-15 19:10:45,024 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities 
+2017-02-15 19:10:45,024 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@f7dc78f2: Principal: widy; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Not granted any authorities 
+2017-02-15 19:10:45,031 DEBUG o.s.s.access.vote.AffirmativeBased - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@219e20ea, returned: -1 
+2017-02-15 19:10:45,031 DEBUG o.s.s.access.vote.AffirmativeBased - Voter: org.springframework.security.web.access.expression.WebExpressionVoter@219e20ea, returned: -1 
+2017-02-15 19:10:45,038 DEBUG o.s.s.w.a.ExceptionTranslationFilter - Access is denied (user is not anonymous); delegating to AccessDeniedHandler 
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:10:45,038 DEBUG o.s.s.w.a.ExceptionTranslationFilter - Access is denied (user is not anonymous); delegating to AccessDeniedHandler 
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:10:45,094 DEBUG o.s.s.o.p.e.DefaultOAuth2ExceptionRenderer - Written [error="access_denied", error_description="Access is denied"] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3ee2125a] 
+2017-02-15 19:10:45,094 DEBUG o.s.s.o.p.e.DefaultOAuth2ExceptionRenderer - Written [error="access_denied", error_description="Access is denied"] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3ee2125a] 
+2017-02-15 19:10:45,095 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:10:45,095 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:11:36,954 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested. 
+2017-02-15 19:11:36,954 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 18:59:25 ICT 2017]; root of context hierarchy 
+2017-02-15 19:11:36,957 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2017-02-15 19:11:56,811 INFO  w.r.s.WotResourceServerApplication - Starting WotResourceServerApplication on Widiyanto with PID 8396 (started by Widiyanto02 in D:\White Open\FIF\Spring Boot\wot_resource_server) 
+2017-02-15 19:11:56,816 INFO  w.r.s.WotResourceServerApplication - No active profile set, falling back to default profiles: default 
+2017-02-15 19:11:56,893 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 19:11:56 ICT 2017]; root of context hierarchy 
+2017-02-15 19:11:57,330 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final 
+2017-02-15 19:11:58,319 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2017-02-15 19:11:58,423 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2017-02-15 19:11:58,834 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 10001 (http) 
+2017-02-15 19:11:58,850 INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+2017-02-15 19:11:58,852 INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2017-02-15 19:11:59,038 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2017-02-15 19:11:59,039 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2147 ms 
+2017-02-15 19:11:59,277 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2017-02-15 19:11:59,279 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+2017-02-15 19:11:59,280 INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2017-02-15 19:11:59,582 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/client]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.client(java.security.Principal) 
+2017-02-15 19:11:59,584 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/state/new]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.newState(javax.servlet.http.HttpSession) 
+2017-02-15 19:11:59,584 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/staff]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.staff() 
+2017-02-15 19:11:59,585 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/admin]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.admin(java.security.Principal) 
+2017-02-15 19:11:59,585 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/halo]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.halo() 
+2017-02-15 19:11:59,586 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/state/verify]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.verifyState(javax.servlet.http.HttpSession) 
+2017-02-15 19:11:59,596 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2017-02-15 19:11:59,597 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2017-02-15 19:11:59,643 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+2017-02-15 19:11:59,709 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 19:11:56 ICT 2017]; root of context hierarchy 
+2017-02-15 19:11:59,905 DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {securityConfig=wot.resource.server.SecurityConfig$$EnhancerBySpringCGLIB$$690364f@5ba745bc} 
+2017-02-15 19:11:59,905 DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {securityConfig=wot.resource.server.SecurityConfig$$EnhancerBySpringCGLIB$$690364f@5ba745bc} 
+2017-02-15 19:11:59,932 INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 80a633e0-ab42-429e-a509-3e0c5222a841
+ 
+2017-02-15 19:12:00,112 DEBUG o.s.s.c.a.w.c.WebSecurityConfigurerAdapter - Using default configure(HttpSecurity). If subclassed this will potentially override subclass configure(HttpSecurity). 
+2017-02-15 19:12:00,112 DEBUG o.s.s.c.a.w.c.WebSecurityConfigurerAdapter - Using default configure(HttpSecurity). If subclassed this will potentially override subclass configure(HttpSecurity). 
+2017-02-15 19:12:00,193 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_STAFF')', for Ant [pattern='/api/staff'] 
+2017-02-15 19:12:00,193 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_STAFF')', for Ant [pattern='/api/staff'] 
+2017-02-15 19:12:00,196 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression '#oauth2.hasScope('trust')', for Ant [pattern='/api/client'] 
+2017-02-15 19:12:00,196 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression '#oauth2.hasScope('trust')', for Ant [pattern='/api/client'] 
+2017-02-15 19:12:00,197 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/api/admin'] 
+2017-02-15 19:12:00,197 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/api/admin'] 
+2017-02-15 19:12:00,207 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,207 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,209 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,209 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,215 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@201aa8c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c12f3ee, org.springframework.security.web.header.HeaderWriterFilter@42f22995, org.springframework.security.web.authentication.logout.LogoutFilter@3e9803c2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7004e3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29182679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682c1e93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d58c727, org.springframework.security.web.session.SessionManagementFilter@286b39c2, org.springframework.security.web.access.ExceptionTranslationFilter@1136b469, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1869f114] 
+2017-02-15 19:12:00,215 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@201aa8c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c12f3ee, org.springframework.security.web.header.HeaderWriterFilter@42f22995, org.springframework.security.web.authentication.logout.LogoutFilter@3e9803c2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7004e3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29182679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682c1e93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d58c727, org.springframework.security.web.session.SessionManagementFilter@286b39c2, org.springframework.security.web.access.ExceptionTranslationFilter@1136b469, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1869f114] 
+2017-02-15 19:12:00,244 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/halo'] 
+2017-02-15 19:12:00,244 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/halo'] 
+2017-02-15 19:12:00,245 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/state/**'] 
+2017-02-15 19:12:00,245 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/state/**'] 
+2017-02-15 19:12:00,248 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/**'] 
+2017-02-15 19:12:00,248 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/**'] 
+2017-02-15 19:12:00,248 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,248 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,249 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,249 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,250 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53dfacba, org.springframework.security.web.context.SecurityContextPersistenceFilter@60723d6a, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.csrf.CsrfFilter@3241713e, org.springframework.security.web.authentication.logout.LogoutFilter@71178a52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18324f97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64f555e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79767781, org.springframework.security.web.session.SessionManagementFilter@2b97cc1f, org.springframework.security.web.access.ExceptionTranslationFilter@13cd7ea5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10ec523c] 
+2017-02-15 19:12:00,250 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53dfacba, org.springframework.security.web.context.SecurityContextPersistenceFilter@60723d6a, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.csrf.CsrfFilter@3241713e, org.springframework.security.web.authentication.logout.LogoutFilter@71178a52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18324f97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64f555e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79767781, org.springframework.security.web.session.SessionManagementFilter@2b97cc1f, org.springframework.security.web.access.ExceptionTranslationFilter@13cd7ea5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10ec523c] 
+2017-02-15 19:12:00,272 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1 
+2017-02-15 19:12:00,272 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1 
+2017-02-15 19:12:00,273 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,273 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,274 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,274 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:12:00,288 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b558294, org.springframework.security.web.context.SecurityContextPersistenceFilter@56de6d6b, org.springframework.security.web.header.HeaderWriterFilter@1280851e, org.springframework.security.web.csrf.CsrfFilter@13a37e2a, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@997d532, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31e32ea2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3028e50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5972d253, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fcc0416, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bb095, org.springframework.security.web.session.SessionManagementFilter@5e840abf, org.springframework.security.web.access.ExceptionTranslationFilter@a50ae65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6075b2d3] 
+2017-02-15 19:12:00,288 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b558294, org.springframework.security.web.context.SecurityContextPersistenceFilter@56de6d6b, org.springframework.security.web.header.HeaderWriterFilter@1280851e, org.springframework.security.web.csrf.CsrfFilter@13a37e2a, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@997d532, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31e32ea2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3028e50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5972d253, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fcc0416, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bb095, org.springframework.security.web.session.SessionManagementFilter@5e840abf, org.springframework.security.web.access.ExceptionTranslationFilter@a50ae65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6075b2d3] 
+2017-02-15 19:12:00,293 WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+ 
+2017-02-15 19:12:00,293 WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+ 
+2017-02-15 19:12:00,813 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2017-02-15 19:12:00,838 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"] 
+2017-02-15 19:12:00,851 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-10001] 
+2017-02-15 19:12:00,868 INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2017-02-15 19:12:00,891 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 10001 (http) 
+2017-02-15 19:12:00,899 INFO  w.r.s.WotResourceServerApplication - Started WotResourceServerApplication in 4.465 seconds (JVM running for 5.634) 
+2017-02-15 19:13:02,195 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2017-02-15 19:13:02,195 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2017-02-15 19:13:02,221 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms 
+2017-02-15 19:13:02,231 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793':
+
+org.apache.catalina.connector.RequestFacade@288aed73
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: dae40352-e8fa-ae4c-e359-19ac79eddf52
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=3E7397526B23BBD00C76DE809205F29F
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:13:02,233 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:13:02,233 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:13:02,234 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:13:02,234 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:13:02,235 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:13:02,235 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:13:02,236 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:13:02,236 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:13:02,237 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:13:02,237 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:13:02,237 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:13:02,237 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:13:02,237 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:13:02,237 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:13:02,238 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:13:02,239 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:13:02,240 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:13:02,240 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:13:02,240 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:13:02,240 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:13:02,382 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:13:02,382 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:13:02,388 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:15:19,054 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793':
+
+org.apache.catalina.connector.RequestFacade@288aed73
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 04283fed-ef25-00ed-9144-dad042127cf5
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=3E7397526B23BBD00C76DE809205F29F
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:15:19,055 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:15:19,055 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:15:19,055 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:15:19,055 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:15:19,056 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:15:19,056 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:15:19,057 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:15:19,057 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:15:19,058 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:15:19,058 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:15:19,059 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:15:19,060 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:15:19,060 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:15:19,060 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:15:19,060 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:15:19,061 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:15:19,062 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:15:19,062 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=f6fb0afc-a6bd-4d2e-a15c-501faf031793 at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:15:19,062 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:15:19,062 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:15:19,088 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:15:19,088 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:15:19,089 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:15:33,090 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/halo':
+
+org.apache.catalina.connector.RequestFacade@288aed73
+
+servletPath:/api/halo
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: d6ae900a-f346-5ddf-ee0f-304d4f85f37f
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=3E7397526B23BBD00C76DE809205F29F
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:15:33,091 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:15:33,092 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:15:33,092 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2f0ce305 
+2017-02-15 19:15:33,092 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:15:33,092 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:15:33,094 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:15:33,094 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:15:33,094 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/logout' 
+2017-02-15 19:15:33,094 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/logout' 
+2017-02-15 19:15:33,095 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:15:33,095 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:15:33,095 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'POST /logout 
+2017-02-15 19:15:33,095 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'POST /logout 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'PUT /logout 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'PUT /logout 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'DELETE /logout 
+2017-02-15 19:15:33,097 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/halo' doesn't match 'DELETE /logout 
+2017-02-15 19:15:33,098 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:15:33,098 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:15:33,098 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:15:33,098 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in request parameters.  Not an OAuth2 request. 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in request parameters.  Not an OAuth2 request. 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.OAuth2AuthenticationProcessingFilter - No token in request, will continue chain. 
+2017-02-15 19:15:33,098 DEBUG o.s.s.o.p.a.OAuth2AuthenticationProcessingFilter - No token in request, will continue chain. 
+2017-02-15 19:15:33,099 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter' 
+2017-02-15 19:15:33,099 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter' 
+2017-02-15 19:15:33,099 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter' 
+2017-02-15 19:15:33,099 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter' 
+2017-02-15 19:15:33,101 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter' 
+2017-02-15 19:15:33,101 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter' 
+2017-02-15 19:15:33,102 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS' 
+2017-02-15 19:15:33,102 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS' 
+2017-02-15 19:15:33,103 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter' 
+2017-02-15 19:15:33,103 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter' 
+2017-02-15 19:15:33,103 DEBUG o.s.s.w.s.SessionManagementFilter - Requested session ID 3E7397526B23BBD00C76DE809205F29F is invalid. 
+2017-02-15 19:15:33,103 DEBUG o.s.s.w.s.SessionManagementFilter - Requested session ID 3E7397526B23BBD00C76DE809205F29F is invalid. 
+2017-02-15 19:15:33,104 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter' 
+2017-02-15 19:15:33,104 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter' 
+2017-02-15 19:15:33,104 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor' 
+2017-02-15 19:15:33,104 DEBUG o.s.security.web.FilterChainProxy - /api/halo at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor' 
+2017-02-15 19:15:33,105 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/staff' 
+2017-02-15 19:15:33,105 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/staff' 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/client' 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/client' 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/admin' 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/halo'; against '/api/admin' 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Public object - authentication not attempted 
+2017-02-15 19:15:33,106 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Public object - authentication not attempted 
+2017-02-15 19:15:33,107 DEBUG o.s.security.web.FilterChainProxy - /api/halo reached end of additional filter chain; proceeding with original chain 
+2017-02-15 19:15:33,107 DEBUG o.s.security.web.FilterChainProxy - /api/halo reached end of additional filter chain; proceeding with original chain 
+2017-02-15 19:15:33,113 DEBUG o.s.s.w.a.ExceptionTranslationFilter - Chain processed normally 
+2017-02-15 19:15:33,113 DEBUG o.s.s.w.a.ExceptionTranslationFilter - Chain processed normally 
+2017-02-15 19:15:33,113 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:15:33,113 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:20:18,045 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested. 
+2017-02-15 19:20:18,046 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 19:11:56 ICT 2017]; root of context hierarchy 
+2017-02-15 19:20:18,050 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2017-02-15 19:34:47,111 INFO  w.r.s.WotResourceServerApplication - Starting WotResourceServerApplication on Widiyanto with PID 2516 (started by Widiyanto02 in D:\White Open\FIF\Spring Boot\wot_resource_server) 
+2017-02-15 19:34:47,115 INFO  w.r.s.WotResourceServerApplication - No active profile set, falling back to default profiles: default 
+2017-02-15 19:34:47,189 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 19:34:47 ICT 2017]; root of context hierarchy 
+2017-02-15 19:34:47,652 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final 
+2017-02-15 19:34:48,603 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2017-02-15 19:34:48,712 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2017-02-15 19:34:49,175 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 10001 (http) 
+2017-02-15 19:34:49,192 INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+2017-02-15 19:34:49,193 INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11 
+2017-02-15 19:34:49,368 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2017-02-15 19:34:49,369 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2180 ms 
+2017-02-15 19:34:49,662 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2017-02-15 19:34:49,665 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+2017-02-15 19:34:49,666 INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2017-02-15 19:34:49,964 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/client]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.client(java.security.Principal) 
+2017-02-15 19:34:49,966 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/state/new]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.newState(javax.servlet.http.HttpSession) 
+2017-02-15 19:34:49,967 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/state/verify]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.verifyState(javax.servlet.http.HttpSession) 
+2017-02-15 19:34:49,968 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/halo]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.halo() 
+2017-02-15 19:34:49,968 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/admin]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.admin(java.security.Principal) 
+2017-02-15 19:34:49,969 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/staff]}" onto public java.util.Map<java.lang.String, java.lang.Object> wot.resource.server.HaloController.staff() 
+2017-02-15 19:34:49,982 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2017-02-15 19:34:49,983 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2017-02-15 19:34:50,043 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+2017-02-15 19:34:50,110 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d082e88: startup date [Wed Feb 15 19:34:47 ICT 2017]; root of context hierarchy 
+2017-02-15 19:34:50,325 DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {securityConfig=wot.resource.server.SecurityConfig$$EnhancerBySpringCGLIB$$690364f@5ba745bc} 
+2017-02-15 19:34:50,325 DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer - Eagerly initializing {securityConfig=wot.resource.server.SecurityConfig$$EnhancerBySpringCGLIB$$690364f@5ba745bc} 
+2017-02-15 19:34:50,343 INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 11e0a6bd-901c-4278-b77b-18ba096bfef5
+ 
+2017-02-15 19:34:50,562 DEBUG o.s.s.c.a.w.c.WebSecurityConfigurerAdapter - Using default configure(HttpSecurity). If subclassed this will potentially override subclass configure(HttpSecurity). 
+2017-02-15 19:34:50,562 DEBUG o.s.s.c.a.w.c.WebSecurityConfigurerAdapter - Using default configure(HttpSecurity). If subclassed this will potentially override subclass configure(HttpSecurity). 
+2017-02-15 19:34:50,654 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_STAFF')', for Ant [pattern='/api/staff'] 
+2017-02-15 19:34:50,654 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_STAFF')', for Ant [pattern='/api/staff'] 
+2017-02-15 19:34:50,658 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression '#oauth2.hasScope('trust')', for Ant [pattern='/api/client'] 
+2017-02-15 19:34:50,658 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression '#oauth2.hasScope('trust')', for Ant [pattern='/api/client'] 
+2017-02-15 19:34:50,660 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/api/admin'] 
+2017-02-15 19:34:50,660 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/api/admin'] 
+2017-02-15 19:34:50,677 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,677 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,679 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,679 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,685 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@201aa8c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c12f3ee, org.springframework.security.web.header.HeaderWriterFilter@42f22995, org.springframework.security.web.authentication.logout.LogoutFilter@3e9803c2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7004e3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29182679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682c1e93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d58c727, org.springframework.security.web.session.SessionManagementFilter@286b39c2, org.springframework.security.web.access.ExceptionTranslationFilter@1136b469, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1869f114] 
+2017-02-15 19:34:50,685 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@201aa8c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c12f3ee, org.springframework.security.web.header.HeaderWriterFilter@42f22995, org.springframework.security.web.authentication.logout.LogoutFilter@3e9803c2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7004e3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29182679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682c1e93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d58c727, org.springframework.security.web.session.SessionManagementFilter@286b39c2, org.springframework.security.web.access.ExceptionTranslationFilter@1136b469, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1869f114] 
+2017-02-15 19:34:50,710 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/halo'] 
+2017-02-15 19:34:50,710 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/halo'] 
+2017-02-15 19:34:50,712 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/state/**'] 
+2017-02-15 19:34:50,712 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/api/state/**'] 
+2017-02-15 19:34:50,713 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/**'] 
+2017-02-15 19:34:50,713 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'permitAll', for Ant [pattern='/**'] 
+2017-02-15 19:34:50,714 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,714 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,714 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,714 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,714 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53dfacba, org.springframework.security.web.context.SecurityContextPersistenceFilter@60723d6a, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.csrf.CsrfFilter@3241713e, org.springframework.security.web.authentication.logout.LogoutFilter@71178a52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18324f97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64f555e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79767781, org.springframework.security.web.session.SessionManagementFilter@2b97cc1f, org.springframework.security.web.access.ExceptionTranslationFilter@13cd7ea5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10ec523c] 
+2017-02-15 19:34:50,714 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53dfacba, org.springframework.security.web.context.SecurityContextPersistenceFilter@60723d6a, org.springframework.security.web.header.HeaderWriterFilter@102d92c4, org.springframework.security.web.csrf.CsrfFilter@3241713e, org.springframework.security.web.authentication.logout.LogoutFilter@71178a52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18324f97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64f555e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79767781, org.springframework.security.web.session.SessionManagementFilter@2b97cc1f, org.springframework.security.web.access.ExceptionTranslationFilter@13cd7ea5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10ec523c] 
+2017-02-15 19:34:50,734 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1 
+2017-02-15 19:34:50,734 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1 
+2017-02-15 19:34:50,735 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,735 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,735 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,735 DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Validated configuration attributes 
+2017-02-15 19:34:50,751 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b558294, org.springframework.security.web.context.SecurityContextPersistenceFilter@56de6d6b, org.springframework.security.web.header.HeaderWriterFilter@1280851e, org.springframework.security.web.csrf.CsrfFilter@13a37e2a, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@997d532, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31e32ea2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3028e50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5972d253, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fcc0416, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bb095, org.springframework.security.web.session.SessionManagementFilter@5e840abf, org.springframework.security.web.access.ExceptionTranslationFilter@a50ae65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6075b2d3] 
+2017-02-15 19:34:50,751 INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b558294, org.springframework.security.web.context.SecurityContextPersistenceFilter@56de6d6b, org.springframework.security.web.header.HeaderWriterFilter@1280851e, org.springframework.security.web.csrf.CsrfFilter@13a37e2a, org.springframework.security.web.authentication.logout.LogoutFilter@749f539e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@997d532, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31e32ea2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3028e50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5972d253, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fcc0416, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bb095, org.springframework.security.web.session.SessionManagementFilter@5e840abf, org.springframework.security.web.access.ExceptionTranslationFilter@a50ae65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6075b2d3] 
+2017-02-15 19:34:50,757 WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+ 
+2017-02-15 19:34:50,757 WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+ 
+2017-02-15 19:34:51,284 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2017-02-15 19:34:51,312 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"] 
+2017-02-15 19:34:51,326 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-10001] 
+2017-02-15 19:34:51,341 INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2017-02-15 19:34:51,380 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 10001 (http) 
+2017-02-15 19:34:51,388 INFO  w.r.s.WotResourceServerApplication - Started WotResourceServerApplication in 4.656 seconds (JVM running for 5.831) 
+2017-02-15 19:35:34,808 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2017-02-15 19:35:34,808 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2017-02-15 19:35:34,836 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms 
+2017-02-15 19:35:34,856 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 599b1ccb-246e-3626-8e2c-39674cb019cc
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:35:34,860 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:35:34,860 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:35:34,861 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:35:34,861 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:35:34,862 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:35:34,862 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:35:34,864 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:35:34,864 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:35:34,876 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:35:34,876 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:35:34,877 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:35:34,877 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:35:34,878 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:35:34,878 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:35:34,879 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:35:34,879 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:35:34,880 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:35:34,881 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:35:34,881 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:35:34,882 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:35:34,882 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:35:34,893 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:35:34,893 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:35:34,894 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:35:34,894 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:35:34,897 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:35:34,897 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:35:35,258 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:35:35,258 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:35:35,262 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:40:08,336 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+content-length: 0
+cache-control: no-cache
+origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 362863f4-4645-feaf-086f-56a74c4f6efd
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:40:08,336 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:08,336 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:08,337 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:08,337 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:08,338 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:08,338 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:08,338 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:08,338 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:08,338 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:08,338 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'GET /logout 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'GET /logout 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:08,339 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:08,340 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:08,341 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:08,341 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'POST /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:08,341 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:08,341 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:08,341 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:08,341 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:08,341 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:08,341 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:08,372 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:08,372 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:08,373 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:40:12,358 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 2d9afd4f-1319-e93a-67bb-c992878423a6
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:40:12,358 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:12,358 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:12,359 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:12,359 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:12,359 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:12,359 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:12,359 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:12,359 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:12,360 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:12,360 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:12,360 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:12,360 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:12,361 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:12,361 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:12,361 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:12,361 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:12,362 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:40:12,362 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:40:12,365 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:12,365 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:12,365 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:12,365 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:12,366 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:12,367 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:12,367 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:12,367 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:12,367 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:12,389 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:12,389 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:12,390 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:40:17,912 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 79287f0e-d64a-339a-e87d-9391e0bd6e1a
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:40:17,912 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:17,912 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:40:17,912 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:17,912 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:40:17,913 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:17,913 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:40:17,914 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:17,914 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:40:17,914 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:17,914 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:40:17,914 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:17,914 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:17,915 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:17,916 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:40:17,916 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:17,916 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:40:17,917 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:17,917 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:40:17,946 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:17,946 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:40:17,947 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:41:58,276 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 74bebee0-5424-ced9-3769-a5ce005f6b94
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:41:58,282 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:41:58,282 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:41:58,283 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:41:58,283 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:41:58,283 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:41:58,284 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:41:58,285 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:41:58,285 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:41:58,285 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:41:58,285 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:41:58,312 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:41:58,312 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:41:58,313 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:41:59,087 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: e2f55901-bcb3-f447-b273-d3c9563f4ecc
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:41:59,087 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:41:59,087 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:41:59,087 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:41:59,087 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:41:59,090 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:41:59,090 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:41:59,090 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:41:59,090 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:41:59,091 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:41:59,091 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:41:59,091 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:41:59,091 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:41:59,091 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:41:59,091 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:41:59,092 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:41:59,093 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:41:59,093 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:41:59,093 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:41:59,093 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:41:59,093 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:41:59,093 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:41:59,094 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:41:59,094 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:41:59,112 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:41:59,112 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:41:59,113 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-02-15 19:42:05,109 INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f':
+
+org.apache.catalina.connector.RequestFacade@32a456a9
+
+servletPath:/api/admin
+pathInfo:null
+headers: 
+host: localhost:10001
+connection: keep-alive
+cache-control: no-cache
+user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+postman-token: 3cbbf98b-cd9e-8491-9e4b-1571e71515e8
+accept: */*
+accept-encoding: gzip, deflate, sdch, br
+accept-language: en-US,en;q=0.8
+cookie: JSESSIONID=2DE995C1516D22491A84EF61269CC034
+
+
+Security filter chain: [
+  WebAsyncManagerIntegrationFilter
+  SecurityContextPersistenceFilter
+  HeaderWriterFilter
+  LogoutFilter
+  OAuth2AuthenticationProcessingFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  FilterSecurityInterceptor
+]
+
+
+************************************************************
+
+ 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter' 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter' 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:42:05,110 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter' 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.h.writers.HstsHeaderWriter - Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@7c192259 
+2017-02-15 19:42:05,111 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:42:05,111 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter' 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', GET] 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Checking match of request : '/api/admin'; against '/logout' 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:42:05,111 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', POST] 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'POST /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', PUT] 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'PUT /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - Trying to match using Ant [pattern='/logout', DELETE] 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.m.AntPathRequestMatcher - Request 'GET /api/admin' doesn't match 'DELETE /logout 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:42:05,112 DEBUG o.s.s.w.u.matcher.OrRequestMatcher - No matches found 
+2017-02-15 19:42:05,113 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:42:05,113 DEBUG o.s.security.web.FilterChainProxy - /api/admin?access_token=3a6b119a-4844-47e3-8827-a959ce13090f at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter' 
+2017-02-15 19:42:05,113 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:42:05,113 DEBUG o.s.s.o.p.a.BearerTokenExtractor - Token not found in headers. Trying request parameters. 
+2017-02-15 19:42:05,130 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:42:05,130 DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed 
+2017-02-15 19:42:05,131 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception 
+org.springframework.web.client.HttpClientErrorException: 403 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:91)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices$1.handleError(RemoteTokenServices.java:70)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:531)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.postForMap(RemoteTokenServices.java:143)
+	at org.springframework.security.oauth2.provider.token.RemoteTokenServices.loadAuthentication(RemoteTokenServices.java:107)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager.authenticate(OAuth2AuthenticationManager.java:83)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:77)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
